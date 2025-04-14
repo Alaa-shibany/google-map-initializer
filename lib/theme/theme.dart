@@ -1,6 +1,6 @@
-import 'package:consulting_project/theme/color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:google_map_initializer/theme/color.dart';
 
 final ThemeData themeData = ThemeData(
   primaryColor: AppColors.primaryColor,
@@ -28,20 +28,13 @@ final ThemeData themeData = ThemeData(
   ),
 
   //==========Button Theme ========///
-  buttonTheme: const ButtonThemeData(
-    textTheme: ButtonTextTheme.primary,
-  ),
+  buttonTheme: const ButtonThemeData(textTheme: ButtonTextTheme.primary),
 
   //======Icon Theme ========//
-  iconTheme: const IconThemeData(
-    color: AppColors.gray,
-    size: 30,
-  ),
+  iconTheme: const IconThemeData(color: AppColors.gray, size: 30),
 
   //========= List tile Theme =======//
-  listTileTheme: const ListTileThemeData(
-    iconColor: AppColors.gray,
-  ),
+  listTileTheme: const ListTileThemeData(iconColor: AppColors.gray),
 
   //========= text field Theme =======//
   inputDecorationTheme: InputDecorationTheme(
@@ -51,9 +44,7 @@ final ThemeData themeData = ThemeData(
     // hoverColor: AppColors.dark,
     fillColor: Colors.white,
     filled: true,
-    border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
+    border: OutlineInputBorder(borderRadius: BorderRadius.circular(8.0)),
     focusedBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(5),
       borderSide: const BorderSide(color: AppColors.borderColor),
@@ -71,9 +62,7 @@ final ThemeData themeData = ThemeData(
       color: AppColors.textLightColor,
     ),
     backgroundColor: AppColors.primaryColor,
-    iconTheme: const IconThemeData(
-      color: Colors.white,
-    ),
+    iconTheme: const IconThemeData(color: Colors.white),
   ),
 
   //======= Tab Bar Theme =======//
@@ -99,9 +88,7 @@ final ThemeData themeData = ThemeData(
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       backgroundColor: AppColors.primaryColor,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8.0),
-      ),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
       textStyle: GoogleFonts.sofiaSans(
         color: Colors.white,
         fontWeight: FontWeight.bold,
@@ -113,9 +100,7 @@ final ThemeData themeData = ThemeData(
   cardTheme: CardTheme(
     color: Colors.white,
     elevation: 4,
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
     margin: const EdgeInsets.all(8.0),
   ),
 
@@ -123,9 +108,7 @@ final ThemeData themeData = ThemeData(
   popupMenuTheme: PopupMenuThemeData(
     color: AppColors.primaryColor,
     textStyle: GoogleFonts.sofiaSans(color: Colors.white),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
   ),
 
   //======= Selection Text Theme =======//

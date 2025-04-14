@@ -3,14 +3,18 @@ part of 'home_cubit.dart';
 @immutable
 sealed class HomeState {
   final ProjectModel project;
-
   const HomeState(this.project);
 }
 
-final class HomeInitial extends HomeState {}
+class HomeInitial extends HomeState {
+  const HomeInitial() : super(const ProjectModel());
+}
 
-final class HomeStepState extends HomeState {
-  final bool state;
+class HomeLoaded extends HomeState {
+  const HomeLoaded(super.project);
+}
 
-  HomeStepState({required this.state});
+class HomeError extends HomeState {
+  final String message;
+  const HomeError(super.project, this.message);
 }
