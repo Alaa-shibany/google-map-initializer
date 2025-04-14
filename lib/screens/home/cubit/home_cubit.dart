@@ -15,8 +15,13 @@ class HomeCubit extends Cubit<HomeState> {
       emit(HomeError(state.project, 'No project selected'));
       return;
     }
-    final pubspecPath = path.join(projectPath, 'pubspec.yaml');
-    final file = File(pubspecPath);
+    print('1');
+    print(projectPath);
+    final pubspecPath = path.join(projectPath, '1744639001668/pubspec.yaml');
+    print(pubspecPath);
+    final file = File(
+      '/data/user/0/com.example.google_map_initializer/cache/file_picker/1744639431404/pubspec.yaml',
+    );
     if (!await file.exists()) {
       emit(
         HomeError(state.project, 'Selected folder is not a Flutter project'),
@@ -30,6 +35,7 @@ class HomeCubit extends Cubit<HomeState> {
         emit(HomeError(state.project, 'Invalid pubspec.yaml'));
         return;
       }
+      print('we are here');
       final newProject = state.project.copyWith(
         path: projectPath,
         isValid: true,
